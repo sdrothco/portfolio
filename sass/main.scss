@@ -15,11 +15,8 @@ $color-5: #8C8B8C;	// gray
 body {
 	font-family: arial,helvetica;
 	color: white;
-	//color: rgba(0,0,0,0.5);
     font-size: 16px;
-
 }
-
 h1 {
 	font-size: 2.5em;	
 	margin: .4em 0;
@@ -29,9 +26,18 @@ h2 {
 	margin: .3em 0;
 }
 p {
-	margin: .2em 0;
+	margin: 1% 0 5% 0;
+
+}
+.text-block {
+	text-align: left;
+	margin-top: 2em;
 }
 
+
+//////////////////////////////////////////////
+// For the general page colors and alignments 
+//
 .about {
 	background-color: $color-5;
 }
@@ -44,7 +50,6 @@ p {
 .contact {
 	background-color: $color-4;
 }
-
 #fullpage {
 	width: 100%;
 }
@@ -58,24 +63,27 @@ p {
 	text-align: left;
 }
 
-.tableCell {
+.tableCell {  /* For use with fullpage.js sections */ 
 	vertical-align: top;
 	padding-top: 4%;
 }
 
+
+/////////////////////////////////////////
+// For the ABOUT PAGE 
+//
 div .about-photo {
 	width: 75%;
 	max-width: 300px;
 	min-width: 175px;
 }
-.text-block {
-	text-align: left;
-	margin-top: 2em;
-}
 
+
+/////////////////////////////////////////
+// For the PORTFOLIO PAGE 
+//
 .project {
 	position: relative;
-	//border: 1px solid black;
 }
 .project-img {
 	width: 80%;
@@ -110,11 +118,30 @@ div .about-photo {
 }
 
 
-p {
-	margin-bottom: 5%;
+/////////////////////////////////////////
+// For the CONTACT ME PAGE 
+//
+#contact-links li {
+	display:inline-block;
+	margin: 10px;
+	background: $color-1;
+	-webkit-border-radius: 12px; 
+            border-radius: 12px;
+    width: 64px;
+    height: 64px;
 
+    img {
+    	width: 64px;
+    	height: 64px;
+    	-webkit-border-radius: 11px; 
+        		border-radius: 11px;
+    }
 }
 
+
+/////////////////////////////////////////
+// For the TOP MENU 
+//
 #menu li {
 	display:inline-block;
 	margin: 10px;
@@ -158,11 +185,6 @@ p {
 	margin:0;
 }
 
-.clear {
- 	clear: both;
- 	height: 0;
- 	width: 0;
-}
 
 
 /////////////////////////////////////////
@@ -182,17 +204,6 @@ p {
 
 .last {
     margin-right: 0 !important;
-    // padding-right: 2%;
-}
-
-.put-at-bottom {
-    position: absolute;
-    bottom: 10px;
-}
-
-.tall {
-    min-height: 400px;
-    padding-bottom: 45px;
 }
 
 .column-20 {
@@ -220,14 +231,5 @@ p {
 }
 
 .column-100 {
-    // margin-right: 0 !important;
     width: 100%;
-}
-
-.non-hidden-overflow {
-    overflow: visible; 
-}
-
-.no-margin {
-	margin: 0;
 }

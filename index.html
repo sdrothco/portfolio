@@ -8,14 +8,6 @@
 <link rel="stylesheet" type="text/css" href="fullPage.js-master/jquery.fullPage.css" />
 <link rel="stylesheet" type="text/css" href="css/main.css" />
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<!-- This following line is needed in case of using the default easing option or when using another
- one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
-<script src="fullPage.js-master/vendors/jquery.easings.min.js"></script>   
-<!-- This following line needed in the case of setting the plugin option `scrollOverflow` to `true` -->
-<script type="text/javascript" src="fullPage.js-master/vendors/jquery.slimscroll.min.js"></script>
-<script type="text/javascript" src="fullPage.js-master/jquery.fullPage.min.js"></script>
-<script src="js/script.js"></script>
 
 </head>
 <body>
@@ -35,7 +27,7 @@
     			<h1 class="page-header">About Dawn Roth</h1>
     		</div>
     		<div class="about-photo-container column column-50">
-    			<img class="about-photo" src="images/dawn-circle-photo.png"/>
+    			<img class="about-photo" src="images/dawn-circle-photo.png" alt="Photo of Dawn"/>
     		</div>
     		<div class="column column-50 last text-block">
     			<p>I am a Software Engineer with ten years of experience in software development, five of which are in web development. I have a Bachelor of Science degree in Computer Science from the University of Michigan.  You can read more about my experience in the <a href="#skillsPage">Skills &amp; Experience</a> section.</p>
@@ -121,9 +113,20 @@
     		<div class="column column-100">
     			<h1 class="page-header">Skills &amp; Experience</h1>
     		</div>
-    		<div class="column column-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, accusantium, quam maxime aut repudiandae excepturi eius tempora officiis necessitatibus quisquam soluta voluptatibus error facilis? Explicabo eligendi maxime similique vero temporibus?
-    		</div>
-    		<div class="column column-50 last">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, accusantium, quam maxime aut repudiandae excepturi eius tempora officiis necessitatibus quisquam soluta voluptatibus error facilis? Explicabo eligendi maxime similique vero temporibus?</div>
+    		<div class="column column-100">
+                <h2>User Experience Technologies:</h2>
+                <p>JavaScript, jQuery, HTML5, CSS3, Sass,<br/>
+                    RESTful APIs, JSON/JSONP, AJAX,<br/>
+                    Responsive Design, Java Server Pages (JSP)</p>
+ 
+
+                <h2>Server-side / Database:</h2>
+                <p>Java, C++, Oracle SQL, JDBC,<br/>
+                    XML, XSLT, SGML</p>
+                 
+                <h2>Tools:</h2>
+                <p>Git, Chrome DevTools</p>
+            </div>
     	</div>
     </div>
     <div class="section contact">
@@ -131,21 +134,29 @@
     		<div class="column column-100">
     			<h1 class="page-header">Contact Me</h1>
     		</div>
+            <div class="column column-100">
+                <h2>Would you like to get in touch with me?</h2>
+            </div>
     		<div class="column column-100">
-    			<ul>
-    				<li>email</li>
-    				<li>linked in</li>
-    				<li>google plus</li>
-    				<li>github</li>
+    			<ul id="contact-links">
+    				<li><a href="mailto:sdrothco@gmail.com"><img src="images/icon_aiga_mail_inver.png" alt="Email" /></a></li>
+    				<li><a href="http://www.linkedin.com/in/dawncroth/" target="_blank"><img src="images/icon_linked_in_resized.png" alt="Linked In" /></a></li>
+    				<li><a href="http://plus.google.com/u/0/106052583383246246772" target="_blank"><img src="images/icon_google_resized.png" alt="Google+" /></a></li>
+    				<li><a href="http://github.com/sdrothco" target="_blank"><img src="images/icon_github_trans.png" alt="Github" /></a></li>
     			</ul>
     		</div>
     	</div>
     </div>
 </div>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- This following line is needed in case of using the default easing option or when using another
+ one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
+<script src="fullPage.js-master/vendors/jquery.easings.min.js"></script>   
+<!-- This following line needed in the case of setting the plugin option `scrollOverflow` to `true` -->
+<script type="text/javascript" src="fullPage.js-master/vendors/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="fullPage.js-master/jquery.fullPage.min.js"></script>
+<script src="js/script.js"></script>
 
-
-
-	
 </body>
 </html>
