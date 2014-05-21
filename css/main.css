@@ -1,0 +1,268 @@
+/* apply a natural box layout model to all elements */
+/* line 8, ../sass/main.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/main.scss */
+body {
+  font-family: arial,helvetica;
+  color: white;
+  font-size: 16px;
+}
+
+/* line 23, ../sass/main.scss */
+h1 {
+  font-size: 2.5em;
+  margin: .4em 0;
+}
+
+/* line 27, ../sass/main.scss */
+h2 {
+  font-size: 1.5em;
+  margin: .3em 0;
+}
+
+/* line 31, ../sass/main.scss */
+p {
+  margin: .2em 0;
+}
+
+/* line 35, ../sass/main.scss */
+.about {
+  background-color: #8c8b8c;
+}
+
+/* line 38, ../sass/main.scss */
+.portfolio {
+  background-color: #06377b;
+}
+
+/* line 41, ../sass/main.scss */
+.skills {
+  background-color: #6f962b;
+}
+
+/* line 44, ../sass/main.scss */
+.contact {
+  background-color: #5e5e5e;
+}
+
+/* line 48, ../sass/main.scss */
+#fullpage {
+  width: 100%;
+}
+
+/* line 51, ../sass/main.scss */
+.section {
+  text-align: center;
+  width: 100%;
+}
+
+/* line 56, ../sass/main.scss */
+.page-header {
+  border-bottom: 5px solid #ff3a90;
+  text-align: left;
+}
+
+/* line 61, ../sass/main.scss */
+.tableCell {
+  vertical-align: top;
+  padding-top: 4%;
+}
+
+/* line 66, ../sass/main.scss */
+div .about-photo {
+  width: 75%;
+  max-width: 300px;
+  min-width: 175px;
+}
+
+/* line 71, ../sass/main.scss */
+.text-block {
+  text-align: left;
+  margin-top: 2em;
+}
+
+/* line 76, ../sass/main.scss */
+.project {
+  position: relative;
+}
+
+/* line 80, ../sass/main.scss */
+.project-img {
+  width: 80%;
+}
+
+/* line 83, ../sass/main.scss */
+.project-img-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -40%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 80%;
+}
+
+/* line 96, ../sass/main.scss */
+.project-img-text {
+  display: none;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5%;
+  margin-left: -20%;
+}
+
+/* line 113, ../sass/main.scss */
+p {
+  margin-bottom: 5%;
+}
+
+/* line 118, ../sass/main.scss */
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  color: #000;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 127, ../sass/main.scss */
+#menu li.active {
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/* line 132, ../sass/main.scss */
+#menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 136, ../sass/main.scss */
+#menu li.active a:hover {
+  color: #000;
+}
+
+/* line 139, ../sass/main.scss */
+#menu li:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* line 143, ../sass/main.scss */
+#menu li a,
+#menu li.active a {
+  padding: 9px 18px;
+  display: block;
+}
+
+/* line 147, ../sass/main.scss */
+#menu li.active a {
+  color: #fff;
+}
+
+/* line 150, ../sass/main.scss */
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 161, ../sass/main.scss */
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+}
+
+/* line 171, ../sass/main.scss */
+.container {
+  width: 100%;
+  border: 0;
+  clear: both;
+}
+
+/* line 177, ../sass/main.scss */
+.column {
+  float: left;
+  margin-right: .5%;
+  padding: 4px;
+}
+
+/* line 183, ../sass/main.scss */
+.last {
+  margin-right: 0 !important;
+}
+
+/* line 188, ../sass/main.scss */
+.put-at-bottom {
+  position: absolute;
+  bottom: 10px;
+}
+
+/* line 193, ../sass/main.scss */
+.tall {
+  min-height: 400px;
+  padding-bottom: 45px;
+}
+
+/* line 198, ../sass/main.scss */
+.column-20 {
+  width: 20%;
+}
+
+/* line 202, ../sass/main.scss */
+.column-25 {
+  width: 24.5%;
+}
+
+/* line 206, ../sass/main.scss */
+.column-33 {
+  width: 32.5%;
+}
+
+/* line 210, ../sass/main.scss */
+.column-50 {
+  width: 48%;
+}
+
+/* line 214, ../sass/main.scss */
+.column-66 {
+  width: 66%;
+}
+
+/* line 218, ../sass/main.scss */
+.column-75 {
+  width: 74.5%;
+}
+
+/* line 222, ../sass/main.scss */
+.column-100 {
+  width: 100%;
+}
+
+/* line 227, ../sass/main.scss */
+.non-hidden-overflow {
+  overflow: visible;
+}
+
+/* line 231, ../sass/main.scss */
+.no-margin {
+  margin: 0;
+}
