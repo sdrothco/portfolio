@@ -16,88 +16,96 @@ body {
 /* line 20, ../sass/main.scss */
 h1 {
   font-size: 2.5em;
-  margin: .4em 0;
+  margin: .4em 0 .4em 0;
 }
 
 /* line 24, ../sass/main.scss */
 h2 {
   font-size: 1.5em;
-  margin: .3em 0;
+  margin: .3em 0 .2em 0;
 }
 
 /* line 28, ../sass/main.scss */
-p {
-  margin: 1% 0 5% 0;
+h3 {
+  font-size: 1em;
+  margin: .3em 0 .2em 0;
 }
 
-/* line 32, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
+p {
+  margin: 1em 0 .5em 0;
+  line-height: 1.3em;
+}
+
+/* line 37, ../sass/main.scss */
 .text-block {
   text-align: left;
-  margin-top: 2em;
 }
 
-/* line 41, ../sass/main.scss */
+/* line 46, ../sass/main.scss */
 .about {
   background-color: #8c8b8c;
 }
 
-/* line 44, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 .portfolio {
   background-color: #06377b;
 }
 
-/* line 47, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 .skills {
   background-color: #6f962b;
 }
 
-/* line 50, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 .contact {
   background-color: #5e5e5e;
 }
 
-/* line 53, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 #fullpage {
   width: 100%;
 }
 
-/* line 56, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .section {
   text-align: center;
   width: 100%;
+  padding: 0 3%;
 }
 
-/* line 61, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 .page-header {
   border-bottom: 5px solid #ff3a90;
   text-align: left;
 }
 
-/* line 66, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 .tableCell {
   /* For use with fullpage.js sections */
   vertical-align: top;
   padding-top: 4%;
+  padding-bottom: 4%;
 }
 
-/* line 75, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 div .about-photo {
   width: 75%;
   max-width: 300px;
   min-width: 175px;
 }
 
-/* line 85, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .project {
   position: relative;
 }
 
-/* line 88, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 .project-img {
   width: 80%;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 98, ../sass/main.scss */
 .project-img-overlay {
   display: none;
   position: absolute;
@@ -105,11 +113,11 @@ div .about-photo {
   left: 50%;
   margin-left: -40%;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 100%;
+  height: 99%;
   width: 80%;
 }
 
-/* line 104, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 .project-img-text {
   display: none;
   color: white;
@@ -122,7 +130,7 @@ div .about-photo {
   margin-left: -20%;
 }
 
-/* line 124, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 #contact-links li {
   display: inline-block;
   margin: 10px;
@@ -132,15 +140,19 @@ div .about-photo {
   width: 64px;
   height: 64px;
 }
-/* line 133, ../sass/main.scss */
+/* line 140, ../sass/main.scss */
 #contact-links li img {
   width: 64px;
   height: 64px;
   -webkit-border-radius: 11px;
   border-radius: 11px;
 }
+/* line 146, ../sass/main.scss */
+#contact-links li:hover {
+  background: white;
+}
 
-/* line 145, ../sass/main.scss */
+/* line 155, ../sass/main.scss */
 #menu li {
   display: inline-block;
   margin: 10px;
@@ -151,42 +163,42 @@ div .about-photo {
   border-radius: 10px;
 }
 
-/* line 154, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 #menu li.active {
   background: #666;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
 
-/* line 159, ../sass/main.scss */
+/* line 169, ../sass/main.scss */
 #menu li a {
   text-decoration: none;
   color: #000;
 }
 
-/* line 163, ../sass/main.scss */
+/* line 173, ../sass/main.scss */
 #menu li.active a:hover {
   color: #000;
 }
 
-/* line 166, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 #menu li:hover {
   background: rgba(255, 255, 255, 0.8);
 }
 
-/* line 170, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 #menu li a,
 #menu li.active a {
   padding: 9px 18px;
   display: block;
 }
 
-/* line 174, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 #menu li.active a {
   color: #fff;
 }
 
-/* line 177, ../sass/main.scss */
+/* line 187, ../sass/main.scss */
 #menu {
   position: fixed;
   top: 0;
@@ -198,56 +210,50 @@ div .about-photo {
   margin: 0;
 }
 
-/* line 193, ../sass/main.scss */
+/* line 203, ../sass/main.scss */
 .container {
   width: 100%;
   border: 0;
   clear: both;
 }
 
-/* line 199, ../sass/main.scss */
+/* line 209, ../sass/main.scss */
 .column {
   float: left;
-  margin-right: .5%;
   padding: 4px;
 }
 
-/* line 205, ../sass/main.scss */
-.last {
-  margin-right: 0 !important;
-}
-
-/* line 209, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 .column-20 {
   width: 20%;
 }
 
-/* line 213, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 .column-25 {
-  width: 24.5%;
+  width: 25%;
 }
 
-/* line 217, ../sass/main.scss */
+/* line 222, ../sass/main.scss */
 .column-33 {
-  width: 32.5%;
+  width: 33%;
 }
 
-/* line 221, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 .column-50 {
-  width: 48%;
+  width: 50%;
 }
 
-/* line 225, ../sass/main.scss */
+/* line 230, ../sass/main.scss */
 .column-66 {
-  width: 66%;
+  width: 66.667%;
 }
 
-/* line 229, ../sass/main.scss */
+/* line 234, ../sass/main.scss */
 .column-75 {
-  width: 74.5%;
+  width: 75%;
 }
 
-/* line 233, ../sass/main.scss */
+/* line 238, ../sass/main.scss */
 .column-100 {
   width: 100%;
 }

@@ -19,19 +19,24 @@ body {
 }
 h1 {
 	font-size: 2.5em;	
-	margin: .4em 0;
+	margin: .4em 0 .4em 0;
 }
 h2 {
 	font-size: 1.5em;
-	margin: .3em 0;
+	margin: .3em 0 .2em 0;
+}
+h3 {
+	font-size: 1em;
+	margin: .3em 0 .2em 0;
+
 }
 p {
-	margin: 1% 0 5% 0;
-
+	margin: 1em 0 .5em 0;
+	line-height: 1.3em;
 }
 .text-block {
 	text-align: left;
-	margin-top: 2em;
+	//margin-top: 2em;
 }
 
 
@@ -51,11 +56,12 @@ p {
 	background-color: $color-4;
 }
 #fullpage {
-	width: 100%;
+	width: 100%;	
 }
 .section{
 	text-align: center;
 	width: 100%;
+    padding: 0 3%;
 }
 
 .page-header {
@@ -66,6 +72,7 @@ p {
 .tableCell {  /* For use with fullpage.js sections */ 
 	vertical-align: top;
 	padding-top: 4%;
+	padding-bottom: 4%;
 }
 
 
@@ -97,7 +104,7 @@ div .about-photo {
 	margin-left: -40%;
 
 	background-color: rgba(0,0,0,.6);
-	height: 100%;
+	height: 99%;
 	width: 80%;
 
 }
@@ -136,6 +143,9 @@ div .about-photo {
     	-webkit-border-radius: 11px; 
         		border-radius: 11px;
     }
+    &:hover{
+	background: white;
+}
 }
 
 
@@ -198,12 +208,7 @@ div .about-photo {
 
 .column {
     float: left;
-    margin-right: .5%;
     padding: 4px;
-}
-
-.last {
-    margin-right: 0 !important;
 }
 
 .column-20 {
@@ -211,23 +216,23 @@ div .about-photo {
 }
 
 .column-25 {
-    width: 24.5%;   
+    width: 25%;   
 }
 
 .column-33 {
-    width: 32.5%;   
+    width: 33%;   
 }
 
 .column-50 {
-    width: 48%;
+    width: 50%;
 }
 
 .column-66 {
-    width: 66%;
+    width: 66.667%;
 }
 
 .column-75 {
-    width: 74.5%;
+    width: 75%;
 }
 
 .column-100 {
