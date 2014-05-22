@@ -19,19 +19,21 @@ body {
 }
 h1 {
 	font-size: 2.5em;	
-	margin: .4em 0 .4em 0;
+	margin: .5em 0 .4em 0;
+	border-bottom: 5px solid $color-1;
+	text-align: left;
 }
 h2 {
 	font-size: 1.5em;
-	margin: .3em 0 .2em 0;
+	margin: .5em 0 .2em 0;
 }
 h3 {
 	font-size: 1em;
-	margin: .3em 0 .2em 0;
+	margin: .5em 0 .2em 0;
 
 }
 p {
-	margin: 1em 0 .5em 0;
+	margin: .5em 0 .5em 0;
 	line-height: 1.3em;
 }
 .text-block {
@@ -62,11 +64,6 @@ p {
 	text-align: center;
 	width: 100%;
     padding: 0 3%;
-}
-
-.page-header {
-	border-bottom: 5px solid $color-1;
-	text-align: left;
 }
 
 .tableCell {  /* For use with fullpage.js sections */ 
@@ -122,6 +119,11 @@ div .about-photo {
 	margin-top: -5%;
 	margin-left: -20%;
 	
+}
+
+
+.column-padding {
+	padding-right: 2% !important;
 }
 
 
