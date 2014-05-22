@@ -80,7 +80,7 @@ p {
 .tableCell {
   /* For use with fullpage.js sections */
   vertical-align: top;
-  padding-top: 4%;
+  padding-top: 8%;
   padding-bottom: 4%;
 }
 
@@ -118,7 +118,7 @@ div .about-photo {
   display: none;
   color: white;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -132,6 +132,12 @@ div .about-photo {
 }
 
 /* line 133, ../sass/main.scss */
+#contact-links {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 138, ../sass/main.scss */
 #contact-links li {
   display: inline-block;
   margin: 10px;
@@ -141,19 +147,19 @@ div .about-photo {
   width: 64px;
   height: 64px;
 }
-/* line 142, ../sass/main.scss */
+/* line 147, ../sass/main.scss */
 #contact-links li img {
   width: 64px;
   height: 64px;
   -webkit-border-radius: 11px;
   border-radius: 11px;
 }
-/* line 148, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 #contact-links li:hover {
   background: white;
 }
 
-/* line 157, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 #menu li {
   display: inline-block;
   margin: 10px;
@@ -164,42 +170,42 @@ div .about-photo {
   border-radius: 10px;
 }
 
-/* line 166, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 #menu li.active {
   background: #666;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
 
-/* line 171, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 #menu li a {
   text-decoration: none;
   color: #000;
 }
 
-/* line 175, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 #menu li.active a:hover {
   color: #000;
 }
 
-/* line 178, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 #menu li:hover {
   background: rgba(255, 255, 255, 0.8);
 }
 
-/* line 182, ../sass/main.scss */
+/* line 187, ../sass/main.scss */
 #menu li a,
 #menu li.active a {
   padding: 9px 18px;
   display: block;
 }
 
-/* line 186, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
 #menu li.active a {
   color: #fff;
 }
 
-/* line 189, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 #menu {
   position: fixed;
   top: 0;
@@ -211,50 +217,121 @@ div .about-photo {
   margin: 0;
 }
 
-/* line 205, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 .container {
   width: 100%;
   border: 0;
   clear: both;
 }
 
-/* line 211, ../sass/main.scss */
+/* line 216, ../sass/main.scss */
 .column {
   float: left;
   padding: 4px;
 }
 
-/* line 216, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 .column-20 {
   width: 20%;
 }
 
-/* line 220, ../sass/main.scss */
+/* line 225, ../sass/main.scss */
 .column-25 {
   width: 25%;
 }
 
-/* line 224, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 .column-33 {
   width: 33%;
 }
 
-/* line 228, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 .column-50 {
   width: 50%;
 }
 
-/* line 232, ../sass/main.scss */
+/* line 237, ../sass/main.scss */
 .column-66 {
   width: 66.667%;
 }
 
-/* line 236, ../sass/main.scss */
+/* line 241, ../sass/main.scss */
 .column-75 {
   width: 75%;
 }
 
-/* line 240, ../sass/main.scss */
+/* line 245, ../sass/main.scss */
 .column-100 {
   width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 253, ../sass/main.scss */
+  .column-20, .column-25, .column-33,
+  .column-50, .column-66, .column-75 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  /* line 262, ../sass/main.scss */
+  .project-img-text {
+    font-size: 1.5em;
+  }
+
+  /* line 266, ../sass/main.scss */
+  #menu li {
+    display: inline-block;
+    margin: 5px;
+    color: #000;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  /* line 276, ../sass/main.scss */
+  #menu li.active {
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+
+  /* line 281, ../sass/main.scss */
+  #menu li a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  /* line 285, ../sass/main.scss */
+  #menu li.active a:hover {
+    color: #000;
+  }
+
+  /* line 288, ../sass/main.scss */
+  #menu li:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  /* line 292, ../sass/main.scss */
+  #menu li a,
+  #menu li.active a {
+    padding: 5px 10px;
+    display: block;
+  }
+
+  /* line 297, ../sass/main.scss */
+  #menu li.active a {
+    color: #fff;
+  }
+
+  /* line 300, ../sass/main.scss */
+  #menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }

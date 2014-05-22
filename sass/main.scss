@@ -68,7 +68,7 @@ p {
 
 .tableCell {  /* For use with fullpage.js sections */ 
 	vertical-align: top;
-	padding-top: 4%;
+	padding-top: 8%;
 	padding-bottom: 4%;
 }
 
@@ -110,7 +110,7 @@ div .about-photo {
 
 	color: white;
 	text-align: center;
-	font-size: 3em;
+	font-size: 2em;
 
 	position: absolute;
 	top: 50%;
@@ -130,6 +130,11 @@ div .about-photo {
 /////////////////////////////////////////
 // For the CONTACT ME PAGE 
 //
+#contact-links {
+	margin: 0;
+	padding: 0;
+}
+
 #contact-links li {
 	display:inline-block;
 	margin: 10px;
@@ -239,4 +244,69 @@ div .about-photo {
 
 .column-100 {
     width: 100%;
+}
+
+
+@media screen and (max-width: 1024px) { 
+
+	.column-20, .column-25, .column-33, 
+	.column-50, .column-66, .column-75 {
+
+	    width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 580px) {
+
+.project-img-text {
+	font-size: 1.5em;
+}
+
+#menu li {
+	display:inline-block;
+	// margin: 10px;
+	margin: 5px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	//padding: 9px 18px;
+	padding: 5px 10px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	//height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+
 }
