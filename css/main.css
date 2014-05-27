@@ -302,25 +302,31 @@ div .about-photo {
   width: 100%;
 }
 
+@media screen and (min-width: 1025px) {
+  /* line 282, ../sass/main.scss */
+  #menu {
+    display: block;
+  }
+}
 @media screen and (max-width: 1024px) {
-  /* line 284, ../sass/main.scss */
+  /* line 290, ../sass/main.scss */
   .column-20, .column-25, .column-33,
   .column-50, .column-66, .column-75 {
     width: 100%;
   }
 
-  /* line 289, ../sass/main.scss */
+  /* line 295, ../sass/main.scss */
   #menu {
     display: block;
   }
 }
 @media screen and (max-width: 580px) {
-  /* line 296, ../sass/main.scss */
+  /* line 302, ../sass/main.scss */
   .project-img-text {
     font-size: 1.5em;
   }
 
-  /* line 301, ../sass/main.scss */
+  /* line 307, ../sass/main.scss */
   #menu li,
   #menu li.active {
     display: block;
@@ -333,39 +339,39 @@ div .about-photo {
     border-bottom: 1px solid white;
   }
 
-  /* line 318, ../sass/main.scss */
+  /* line 324, ../sass/main.scss */
   #menu li a {
     text-decoration: none;
     color: #000;
   }
 
-  /* line 322, ../sass/main.scss */
+  /* line 328, ../sass/main.scss */
   #menu li.active a:hover {
     color: #000;
   }
 
-  /* line 325, ../sass/main.scss */
+  /* line 331, ../sass/main.scss */
   #menu li:hover {
     background: #ff3a90;
   }
 
-  /* line 329, ../sass/main.scss */
+  /* line 335, ../sass/main.scss */
   #menu li a,
   #menu li.active a {
     padding: 5px 10px;
     display: block;
   }
 
-  /* line 335, ../sass/main.scss */
+  /* line 341, ../sass/main.scss */
   #menu li.active a {
     color: #000;
   }
 
-  /* line 339, ../sass/main.scss */
+  /* line 345, ../sass/main.scss */
   #menu {
     display: none;
     position: fixed;
-    top: 0;
+    top: 64px;
     left: 0;
     height: auto;
     z-index: 70;
@@ -374,7 +380,7 @@ div .about-photo {
     margin: 0;
   }
 
-  /* line 357, ../sass/main.scss */
+  /* line 363, ../sass/main.scss */
   .mobile-menu a {
     display: block;
     background: inherit;

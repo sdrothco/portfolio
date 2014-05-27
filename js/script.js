@@ -18,8 +18,9 @@ $(document).ready(function() {
 
 	});
 	$('#menu a').on('click', function() {
-
-		$('#menu').slideToggle();
+		if ( $('#mobile-menu-link').is(':visible') ) {
+			$('#menu').slideToggle();
+		}
 
 	});
 
