@@ -16,6 +16,7 @@ body {
 	font-family: arial,helvetica;
 	color: white;
     font-size: 16px;
+    background: $color-5;
 }
 h1 {
 	font-size: 2.5em;	
@@ -90,38 +91,41 @@ div .about-photo {
 	position: relative;
 }
 .project-img {
-	width: 80%;
+	width: 100%;
+    height: 100%;
 }
 .project-img-overlay{
 	display: none;
 	
 	position: absolute;
 	top: 0;
-	left: 50%;
-	margin-left: -40%;
-
+	left: 0;
 	background-color: rgba(0,0,0,.6);
 	height: 99%;
-	width: 80%;
-
+	width: 100%;
 }
-.project-img-text {
-	display: none;
-
-	color: white;
-	text-align: center;
-	font-size: 2em;
-
-	position: absolute;
-	top: 50%;
-	left: 50%;
-
-	margin-top: -5%;
-	margin-left: -20%;
-	
+.project:hover .project-img-overlay {
+	display: block;
+}
+.project-img-overlay p {
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+	-webkit-transform:translate(-50%,-50%);
+	   -moz-transform:translate(-50%,-50%);
+	    -ms-transform:translate(-50%,-50%);
+	     -o-transform:translate(-50%,-50%);
+	        transform:translate(-50%,-50%);
+    padding: 0;
+    margin: 0;
 }
 
-
+/////////////////////////////////////////
+// For the SKILLS PAGE 
+//
 .column-padding {
 	padding-right: 2% !important;
 }
@@ -192,6 +196,7 @@ div .about-photo {
 	color: #fff;
 }
 #menu{
+	display: block;
 	position:fixed;
 	top:0;
 	left:0;
@@ -202,6 +207,32 @@ div .about-photo {
 	margin:0;
 }
 
+
+
+.mobile-menu a {
+	display: none;
+
+	position:fixed;
+	top:0;
+	right:0;
+	height: 64px;
+	width: 64px;
+	z-index: 1;
+	margin-top: 1%;
+	margin-right: 3%;
+}
+
+.mobile-menu img {
+	position:relative;
+	top:0;
+	right:0;
+	display: block;
+	height: 64px;
+	width: 64px;
+	z-index: 2;
+	margin-top: 1%;
+	margin-right: 3%;
+}
 
 
 /////////////////////////////////////////
@@ -255,6 +286,9 @@ div .about-photo {
 	    width: 100%;
 	}
 
+	#menu {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 580px) {
@@ -263,50 +297,69 @@ div .about-photo {
 	font-size: 1.5em;
 }
 
-#menu li {
-	display:inline-block;
-	// margin: 10px;
-	margin: 5px;
+#menu li, 
+ #menu li.active {
+	display:block;
+	margin: 0;
+	padding: 5px 0;
 	color: #000;
-	background:#fff;
-	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 10px;
-            border-radius: 10px;
+	//background:#fff;
+	//background: rgba(255,255,255, 0.5);
+	background: $color-1;
+	-webkit-border-radius: 0;
+            border-radius: 0;
+    border-bottom: 1px solid white;
 }
-#menu li.active{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
-	color: #fff;
-}
+// #menu li.active{
+// 	background: $color-1;
+// 	//background: rgba(0,0,0, 0.5);
+// 	color: #000;
+// }
 #menu li a{
 	text-decoration:none;
-	color: #000;
+	color:#000;
 }
 #menu li.active a:hover{
 	color: #000;
 }
 #menu li:hover{
-	background: rgba(255,255,255, 0.8);
+	background: $color-1;
 }
 #menu li a,
 #menu li.active a{
 	//padding: 9px 18px;
 	padding: 5px 10px;
 	display:block;
+
 }
 #menu li.active a{
-	color: #fff;
+	color: #000;
+
 }
 #menu{
-	position:fixed;
+	display: none;
+	position: fixed;
+	// position:relative;
 	top:0;
 	left:0;
 	//height: 40px;
+	height: auto;
 	z-index: 70;
 	width: 100%;
 	padding: 0;
 	margin:0;
 }
 
+#fullpage {
+	//padding-top: 20%;
+}
+
+.mobile-menu a {
+	display: block;
+	//background: $color-5;
+	background: inherit;
+	//width: 100%
+	float: right;
+}
 
 }

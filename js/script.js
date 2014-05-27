@@ -12,13 +12,14 @@ $(document).ready(function() {
 		//navigationTooltips: ['About', 'Portfolio', 'Skills', 'Contact']
 	});
 
-	$('.project').hover( function() {
-		$(this).find('.project-img-overlay').show();
-		$(this).find('.project-img-text').show();
+	$('#mobile-menu-link').on( 'click', function (e) {
+		e.preventDefault();
+		$('#menu').slideToggle();
 
-	}).mouseleave( function() {
-		$(this).find('.project-img-overlay').hide();
-		$(this).find('.project-img-text').hide();
+	});
+	$('#menu a').on('click', function() {
+
+		$('#menu').slideToggle();
 
 	});
 

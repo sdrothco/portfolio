@@ -4,21 +4,27 @@
 	<meta charset="UTF-8">
 	<title>Dawn Roth - Portfolio</title>
 
-<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-<link rel="stylesheet" type="text/css" href="fullPage.js-master/jquery.fullPage.css" />
-<link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fullPage.js-master/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
+    <meta name="author" content="Dawn Roth">
+    <meta name="description" content="Portfolio for Dawn Roth">
+    <meta name="viewport" content="width=device-width" />
 </head>
 <body>
 
 <ul id="menu">
-	<li data-menuanchor="aboutPage" class="active"><a href="#aboutPage">About</a></li>
-	<li data-menuanchor="portfolioPage"><a href="#portfolioPage">Portfolio</a></li>
-	<li data-menuanchor="skillsPage"><a href="#skillsPage">Skills &amp; Experience</a></li>
-	<li data-menuanchor="contactPage"><a href="#contactPage">Contact Me</a></li>
+    <li data-menuanchor="aboutPage" class="active"><a href="#aboutPage">About</a></li>
+    <li data-menuanchor="portfolioPage"><a href="#portfolioPage">Portfolio</a></li>
+    <li data-menuanchor="skillsPage"><a href="#skillsPage">Skills &amp; Experience</a></li>
+    <li data-menuanchor="contactPage"><a href="#contactPage">Contact Me</a></li>
 </ul>
 
 <div id="fullpage">
+    <div class="mobile-menu">
+        <a id="mobile-menu-link" href="#"><img src="images/menu-alt-pink.png" alt="Mobile Menu" /></a>
+    </div>
     <div class="section about">
     	<div class="container">
     		<div class="column column-100">
@@ -42,8 +48,9 @@
     			<div class="project">
         			<a href="http://sdrothco.github.io/Shopping-list/" target="_blank">
                         <img class="project-img" src="images/shopping-list-app.gif" alt="Shopping List App"/>
-                        <div class="project-img-overlay"></div>
-                        <div class="project-img-text">&lt;See it live&gt;</div>
+                        <div class="project-img-overlay">
+                            <p>&lt;See it live&gt;</p>
+                        </div>
                     </a>
     			</div>
     			<h2>Shopping List App</h2>
@@ -53,8 +60,9 @@
                 <div class="project">
                     <a href="http://sdrothco.github.io/kids-map/" target="_blank">
                         <img class="project-img" src="images/kids-map.gif" alt="Things To Do With Kids App"/>
-                        <div class="project-img-overlay"></div>
-                        <div class="project-img-text">&lt;See it live&gt;</div>
+                        <div class="project-img-overlay">
+                            <p>&lt;See it live&gt;</p>
+                        </div>
                     </a>
                 </div>
     			<h2>Things To Do With Kids Google API Mashup</h2>
@@ -64,8 +72,9 @@
                 <div class="project">
                     <a href="http://sdrothco.github.io/hot-or-cold/" target="_blank">
                         <img class="project-img" src="images/hot-or-cold.gif" alt="Hot Or Cold Game"/>
-                        <div class="project-img-overlay"></div>
-                        <div class="project-img-text">&lt;See it live&gt;</div>
+                        <div class="project-img-overlay">
+                            <p>&lt;See it live&gt;</p>
+                        </div>
                     </a>
                 </div>
     			<h2>Hot Or Cold Game</h2>
@@ -75,8 +84,9 @@
                 <div class="project">
                     <a href="http://sdrothco.github.io/doctor-who-quiz/" target="_blank">
                         <img class="project-img" src="images/doctor-who-quiz.gif" alt="Doctor Who Quiz"/>
-                        <div class="project-img-overlay"></div>
-                        <div class="project-img-text">&lt;See it live&gt;</div>
+                        <div class="project-img-overlay">
+                            <p>&lt;See it live&gt;</p>
+                        </div>
                     </a>
                 </div>    
     			<h2>Doctor Who Quiz</h2>
@@ -86,8 +96,9 @@
                 <div class="project">
                     <a href="http://sdrothco.github.io/stackerAJAX/" target="_blank">
                         <img class="project-img" src="images/stack-overflow-ajax.gif" alt="Stack Overflow Ajax API"/>
-                        <div class="project-img-overlay"></div>
-                        <div class="project-img-text">&lt;See it live&gt;</div>
+                        <div class="project-img-overlay">
+                            <p>&lt;See it live&gt;</p>
+                        </div>
                     </a>
                 </div>
     			<h2>Stack Overflow</h2>
@@ -97,8 +108,9 @@
                 <div class="project">
                     <a href="http://sdrothco.github.io/jquery-streetfighter/main.html" target="_blank">
                         <img class="project-img" src="images/street-fighter.gif" alt="Street Fighter Game Demo"/>
-                        <div class="project-img-overlay"></div>
-                        <div class="project-img-text">&lt;See it live&gt;</div>
+                        <div class="project-img-overlay">
+                            <p>&lt;See it live&gt;</p>
+                        </div>
                     </a>
                 </div>
     			<h2>Street Fighter Demo</h2>
@@ -174,8 +186,8 @@
  one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
 <script src="fullPage.js-master/vendors/jquery.easings.min.js"></script>   
 <!-- This following line needed in the case of setting the plugin option `scrollOverflow` to `true` -->
-<script type="text/javascript" src="fullPage.js-master/vendors/jquery.slimscroll.min.js"></script>
-<script type="text/javascript" src="fullPage.js-master/jquery.fullPage.min.js"></script>
+<!-- <script type="text/javascript" src="fullPage.js-master/vendors/jquery.slimscroll.min.js"></script> -->
+<script type="text/javascript" src="fullPage.js-master/jquery.fullPage.js"></script>
 <script src="js/script.js"></script>
 
 </body>
