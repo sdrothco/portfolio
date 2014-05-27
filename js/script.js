@@ -25,7 +25,7 @@ $(document).ready(function() {
 	});
 	$( window ).scroll( function() {
 		if ( $('#mobile-menu-link').is(':visible') ) {
-			$('#menu').stop().slideUp();
+			$('#menu').slideUp();
 		}
 	});
 
