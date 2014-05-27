@@ -16,6 +16,7 @@ body {
 	font-family: arial,helvetica;
 	color: white;
     font-size: 16px;
+    // background: white;
     background: $color-5;
 }
 h1 {
@@ -69,7 +70,7 @@ p {
 
 .tableCell {  /* For use with fullpage.js sections */ 
 	vertical-align: top;
-	padding-top: 8%;
+	padding-top: 64px;
 	padding-bottom: 4%;
 }
 
@@ -209,16 +210,27 @@ div .about-photo {
 
 
 
-.mobile-menu a {
+.mobile-menu {
 	display: none;
 
 	position:fixed;
 	top:0;
-	right:0;
+	left: 0;
+	right:0;	
 	height: 64px;
-	width: 64px;
+	background: white;
 	z-index: 1;
-	margin-top: 1%;
+}
+
+.mobile-menu a {
+	display: none;
+	position:relative;
+	top:0;
+	right:0;
+	height: 60px;
+	width: 60px;
+	//z-index: 1;
+	margin-top: .5%;
 	margin-right: 3%;
 }
 
@@ -227,10 +239,10 @@ div .about-photo {
 	top:0;
 	right:0;
 	display: block;
-	height: 64px;
-	width: 64px;
-	z-index: 2;
-	margin-top: 1%;
+	height: 60px;
+	width: 60px;
+	//z-index: 2;
+	margin-top: .5%;
 	margin-right: 3%;
 }
 
@@ -239,7 +251,8 @@ div .about-photo {
 // For the GRID SYSTEM 
 //
 .container {
-    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     border: 0;
     clear: both;
 }
@@ -278,13 +291,14 @@ div .about-photo {
 }
 
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 961px) {
 	#menu {
 		display: block;
 	}
 }
 
-@media screen and (max-width: 1024px) { 
+//@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 960px) { 
 
 	.column-20, .column-25, .column-33, 
 	.column-50, .column-66, .column-75 {
@@ -358,6 +372,10 @@ div .about-photo {
 
 #fullpage {
 	//padding-top: 20%;
+}
+
+.mobile-menu {
+	display: block;
 }
 
 .mobile-menu a {
